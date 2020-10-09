@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #555;
+    outline: none;
+}
+
+
+/* navbar */
+ ul li {
+    list-style: none;
+}
+
+
+.btn:hover {
+    background-color: #444;
+    color: white;
+}
+
+.s11px {
+    font-size: 11px;
+}
+.s12px {
+    font-size: 12px;
+}
+.s13px {
+    font-size: 13px;
+}
+.s14px {
+    font-size: 14px;
+}
+.m15px {
+    font-size: 15px;
+}
+.m16px {
+    font-size: 16px;
+}
+.l17px {
+    font-size: 17px;
+}
+.l18px {
+    font-size: 18px;
+}
+
+
+.error {
+    color: red;
+}
+
+.pane-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pane {
+    margin: 1rem;
+    height: 100vh;
+    display: flex;
+    min-width: 79%;
+    background-color: hsl(225, 6%, 100%);
+    box-shadow: 0 0 15px -3px #444444;
+    
+}
+.output {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.output .loader {
+    font-size: 24px;
+}
+
+.output-data {
+    border: 1px solid #999;
+    width: 80%;
+    height: 9rem;
+    box-shadow: 0 0 10px -3px #444444;
+    overflow: scroll;
+    background-color: black;
+}
+
+/* profile */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.profile-pic {
+    width: 2rem;
+    border-radius: 50%;
+}
+.user-name {
+    color: white;
+    font-size: 14px;
+    width: 7rem;
+}
+
+.editor-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color: hsl(225, 6%, 100%);
+}
+
+.editor-container .collapsed .CodeMirror-scroll {
+    position: absolute;
+    overflow: hidden !important;
+  } 
+
+.editor-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225, 6%, 96%);
+    color: black;
+    padding: .5rem .5rem .5rem 1rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.theme {
+    width: 100%;
+    padding: .5rem;
+    outline: none;
+    border-color: #bbb;
+}
+.codes {
+    padding: .5rem;
+    outline: none;
+    border-color: #bbb;
+    width:100%;
+}
+
+.language {
+    padding: .5rem;
+    outline: none;
+    width: 100%;
+    border-color: #bbb;
+}
+.textSize {
+    padding: .5rem;
+    outline: none;  
+    width: 100%; 
+    border-color: #bbb;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-around;
+    min-width:50%;
+}
+
+.expand-collpase-btn {
+    margin-left: .5rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+
+.CodeMirror {
+    height: 100% !important;
+}
+  
+.code-mirror-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    overflow: scroll !important;
+    overflow-y: auto;
+  }
+
+.input-area {
+    resize: horizontal;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.footer .test-btn {
+    box-shadow: 0 0 15px -3px #444444;
+}
+
+
+
+/* login and signup form */
+
+.container {
+    width: 40%;
+}
+
+.google {
+    border: none;   
+    background: white; 
+    color: #C7C6C9; 
+}
+.github {
+    border: none;   
+    background: white; 
+    color: #C7C6C9; 
+}
+
+.google:hover {
+    color: #DB4A39;
+}
+.github:hover {
+    color: #212121;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 1000px) {
+    .pane-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-area {
+        width: 4rem;
+    }
+    .editor-title {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .widgets {
+        width: 100%;
+    }
+    .pane {
+        width: 70%;
+        height: 80vh;
+    }
+    
+}
+@media only screen and (max-width: 1200px) {
+    .pane-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        margin-bottom: 4px;
+    }
+    .input-area {
+        width: 4rem;
+    }
+    .editor-title {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .editor-container {
+        width: 100%;
+    }
+
+    .pane {
+        width: 90%;
+        height: 80vh;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .title{
+        display: none;
+    }
+    .widgets {
+        width: 100%;
+    }
+    .pane {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .title{
+        display: none;
+    }
+    .pane-wrapper {
+        width: 90%;
+        margin: 1rem;
+    }
+    .input-area {
+        width: 2rem;
+    }
+    .pane {
+        width: 100%;
+        height: 100%;
+    }
+
+    .editor-container .widgets {
+        width: 100%;
+    }
+
+    .editor-title .theme {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .editor-title .language {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .editor-title .textSize {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .editor-title .save {
+        margin-top: 1rem;
+        width: 100%;
+    }
+  
+    .editor-title .expand-collpase-btn {
+        display: none;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        margin: 1rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+}
